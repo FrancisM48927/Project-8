@@ -1,14 +1,7 @@
 /**********************************************************************
-* CPEG222 Project 8: BME280 Sensor
-* NUCLEO-F446ZE, bare-metal CMSIS, 180 MHz
-*
-*  BME280   : I2C1  (SCL PB8, SDA PB9)
-*  S1       : PC8   (1 = Celsius, 0 = Fahrenheit)
-*  OLED     : SPI1  (temperature, pressure, humidity)
-*  SSD      : temperature as xx.xx  (TIM5 refresh)
-*  LEDs     : D1..D8 = PD0..PD7, one LED per 12.5 %RH
-*  NeoPixel : PB11, Blue < 70 F, Green 70-80 F, Red > 80 F
-*  Bonus    : temp > 80 F or RH > 50 % -> NeoPixels flash blue/red + siren
+Author: F. MAILOM
+CPEG222 Project 8, 11/5/26
+NucleoF466ZE CMSIS Read Microphone and Display Amplitude 
 **********************************************************************/
 #include "stm32f4xx.h"
 #include "SysClock180MHz.h"
